@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuvette - Project</title>
+    <style>
+      .div-container {
+        background-color: #ffcd9e;
+        display: flex;
+        flex-direction: column;
+        width: 1440px;
+      }
+      .div-2 {
+        align-self: center;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 1257px;
+        padding: 0 20px;
+      }
+
+      .div-3 {
+        gap: 20px;
+        display: flex;
+      }
+
+      .div-left {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 0px;
+      }
+
+      .div-4 {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+      }
+
+      .div-5 {
+        color: #282828;
+        align-self: start;
+        font: 700 36px/150% sans-serif;
+      }
+
+      .div-6 {
+        justify-content: center;
+        color: #484848;
+        align-self: start;
+        margin-top: 23px;
+        font: 500 20px/160% sans-serif;
+      }
+
+      .div-7 {
+        justify-content: center;
+        color: #282828;
+        align-self: start;
+        margin-top: 33px;
+        font: 800 20px/160% sans-serif;
+      }
+
+      .div-8 {
+        align-self: start;
+        display: flex;
+        margin-top: 48px;
+        width: 576px;
+        max-width: 100%;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .div-9 {
+        justify-content: center;
+        color: #888;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 4px solid #000;
+        background-color: #fff;
+        width: 344px;
+        max-width: 100%;
+        flex-grow: 1;
+        flex-basis: auto;
+        padding: 25px 80px 25px 22px;
+        font: 600 20px/160% sans-serif;
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .div-10 {
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        align-self: stretch;
+        border-radius: 8px;
+        background-color: #282828;
+        width: 216px;
+        max-width: 100%;
+        padding: 23px 43px 23px 44px;
+        font: 700 20px sans-serif;
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .div-10:active {
+        background-color: #404040;
+        color: #fff;
+      }
+      .div-11 {
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        align-self: start;
+        max-width: 370px;
+        margin: 18px 0 0 42px;
+        font: 500 16px/160% sans-serif;
+      }
+
+      .div-right {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 20px;
+      }
+
+      .div1 {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        flex-grow: 1;
+      }
+
+      .div-12 {
+        background-color: #282828;
+        align-self: end;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 68px 80px;
+      }
+
+      .footer-container {
+        align-self: center;
+        display: flex;
+        width: 100%;
+        max-width: 1056px;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .div-14 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+      }
+      .div-15 {
+        color: #fff;
+        align-self: stretch;
+        font: 400 20px/160% sans-serif;
+      }
+      .div-16 {
+        color: #fff;
+        align-self: stretch;
+        margin-top: 5px;
+        font: 400 20px/160% sans-serif;
+      }
+      .div-17 {
+        color: #fff;
+        align-self: stretch;
+        margin-top: 5px;
+        font: 400 20px/160% sans-serif;
+      }
+      .div-18 {
+        color: #fff;
+        align-self: stretch;
+        margin-top: 9px;
+        white-space: nowrap;
+        font: 400 20px/160% sans-serif;
+      }
+
+      .div-19 {
+        color: #fff;
+        align-self: stretch;
+        margin-top: 5px;
+        font: 400 20px/160% sans-serif;
+      }
+      .div-20 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+      }
+      .div-21 {
+        color: #fff;
+        text-align: right;
+        font: 400 20px/160% sans-serif;
+      }
+      .div-22 {
+        color: #fff;
+        text-align: right;
+        align-self: end;
+        margin-top: 5px;
+        font: 400 20px/160% sans-serif;
+      }
+      .div-23 {
+        align-self: end;
+        display: flex;
+        margin-top: 16px;
+        width: 213px;
+        max-width: 100%;
+        flex-grow: 1;
+        padding-left: 66px;
+        flex-direction: column;
+      }
+
+      .div-24 {
+        align-self: end;
+        display: flex;
+        width: 68px;
+        max-width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .div2 {
+        aspect-ratio: 1.07;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        overflow: hidden;
+        flex: 1;
+      }
+      .div3 {
+        aspect-ratio: 1.07;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        overflow: hidden;
+        flex: 1;
+      }
+      .div-25 {
+        color: #fff;
+        text-align: right;
+        align-self: end;
+        margin-top: 38px;
+        font: 400 20px/160% sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      #thankYouMessage {
+        display: none;
+        margin-bottom: 10px;
+        padding: 0;
+        color: #282828; 
+        font: 800 40px/200% sans-serif; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-container">
+      <div class="div-2">
+        <div class="div-3">
+          <div class="div-left">
+            <div class="div-4">
+              <h1 class="div-5">
+                An inspiring design delivered to your inbox every morning
+              </h1>
+              <p class="div-6">
+                Our team scouts the internet for the best designs, illustrations
+                and art and delivers a truly inspiring one every day to your
+                inbox
+              </p>
+              <strong class="div-7">Show me how it looks</strong>
+              <div class="thankyouClass">
+                <h1 id="thankYouMessage" style="display: none">Thank you!</h1>
+              </div>
+              <div class="div-8">
+                <form action="/" method="POST" id="registrationForm">
+                  <input
+                    type="text"
+                    class="div-9"
+                    id="emailId"
+                    placeholder="Your e-mail address"
+                  />
+                  <button class="div-10" type="button" id="registerButton">
+                    Register Now
+                  </button>
+                </form>
+              </div>
+              <p class="div-11">Free - No Spam - No Data Sharing</p>
+            </div>
+          </div>
+          <div class="div-right">
+            <img src="img/img1.png" class="div1"/>
+          </div>
+        </div>
+      </div>
+      <div class="div-12">
+        <div class="footer-container">
+          <div class="div-14">
+            <ul>
+              <li>
+                <a href="/"><div class="div-15">Prompt Generator</div></a>
+              </li>
+              <li>
+                <a href="/"><div class="div-16">Dweep Daily</div></a>
+              </li>
+              <li>
+                <a href="/"><div class="div-17">All Contributors</div></a>
+              </li>
+              <li>
+                <a href="/"><div class="div-18">Your data on Dweep.io</div></a>
+              </li>
+              <li>
+                <a href="/"><div class="div-19">Contribute to Dweep</div></a>
+              </li>
+            </ul>
+          </div>
+          <div class="div-20">
+            <a href="/" class="div-21">Dweep.io</a>
+            <p class="div-22">Made with love in India</p>
+            <div class="div-23">
+              <div class="div-24">
+                <a href="/">
+                  <img src="/img/LinkedinLogo.png" class="div2"/>
+                </a>
+                <a href="/">
+                  <img src="img/InstagramLogo.png" class="div3"/>
+                </a>
+              </div>
+              <a href="/" class="div-25">hello@dweep.io</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
